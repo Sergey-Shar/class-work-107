@@ -24,14 +24,7 @@ function replaceStyles(background = 'initial', icon = '☀️') {
 }
 
 function handlerToggleTheme() {
-	const theme = localStorage.getItem('theme');
-	if (theme === 'light') {
-		localStorage.setItem('theme', 'dark');
-		replaceStyles('#273444', '🌙');
-	} else {
-		localStorage.setItem('theme', 'light');
-		replaceStyles();
-	}
+	// *? реализовать свои логику
 }
 
 toggleThemeButton.addEventListener('click', handlerToggleTheme);
@@ -42,12 +35,12 @@ toggleThemeButton.addEventListener('click', handlerToggleTheme);
 
 //* задание 2
 
-function setDateLocalStorage(key, data) {
-	localStorage.setItem(key, JSON.stringify(data));
+function setDateLocalStorage() {
+	// *? реализовать свои логику
 }
 
-function getDateLocalStorage(key) {
-	return JSON.parse(localStorage.getItem(key)) ?? [];
+function getDateLocalStorage() {
+	// *? реализовать свои логику
 }
 
 const formContainer = document.querySelector('.form-container');
@@ -64,8 +57,7 @@ function renderList(arr) {
 	});
 }
 
-form.addEventListener('submit', (event) => {
-	event.preventDefault();
-	const input = event.target.event;
-	input.value = '';
-});
+const handleSubmit = () => {
+	// *? реализовать свои логику
+}
+
